@@ -43,9 +43,7 @@ if(isset($_POST['submit']))
 <html lang="en">
   <?php @include("includes/head.php");?>
   <body>
-<!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+ 
     <div class="container-scroller">
       <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="content-wrapper d-flex align-items-center auth">
@@ -53,7 +51,7 @@ if(isset($_POST['submit']))
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
                 <div class="brand-logo " align="center" >
-                  <img class="img-avatar" src="assets/img/companyimages/logo.jpg" alt="">
+                  <img class="img-avatar" src="assets/img/companyimages/royal.jpg" alt="">
                 </div>
                 <h6 class="font-weight-light">Please enter below detail</h6>
                 <form class="js-validation-signin px-30" method="post" name="chngpwd" onSubmit="return valid();">
@@ -116,7 +114,5 @@ if(isset($_POST['submit']))
     <script src="assets/js/misc.js"></script>
     
   </body>
-<!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+ 
 </html>

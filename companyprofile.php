@@ -28,9 +28,7 @@ if(isset($_POST['submit']))
 <html lang="en">
 <?php @include("includes/head.php");?>
 <body>
-<!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+
     <div class="container-scroller">
         
         <?php @include("includes/header.php");?>
@@ -60,7 +58,7 @@ if(isset($_POST['submit']))
                                         {  
                                             ?>
                                             <form method="post">
-                                                <div class="control-group">
+                                                <!-- <div class="control-group">
                                                     <label class="control-label" for="basicinput">Logo</label>
                                                     <div class="controls">
                                                         <?php 
@@ -80,7 +78,7 @@ if(isset($_POST['submit']))
                                                             <?php
                                                         } ?>
                                                     </div>
-                                                </div>  
+                                                </div>   -->
                                                 <div>&nbsp;</div>
                                                 <div class="row">
                                                     <div class="form-group row col-md-6">
@@ -148,11 +146,7 @@ if(isset($_POST['submit']))
 </div>
 
 <?php @include("includes/foot.php");?>
-<!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+ 
 </body>
-<!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+ 
 </html>

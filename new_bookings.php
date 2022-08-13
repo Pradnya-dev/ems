@@ -48,9 +48,7 @@ if(isset($_POST['submit']))
 <html lang="en">
 <?php @include("includes/head.php");?>
 <body>
-<!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+ 
   <div class="container-scroller">
     
     <?php @include("includes/header.php");?>
@@ -196,6 +194,26 @@ if(isset($_POST['submit']))
                             <?php } ?>
                           </select>
                         </div>
+
+                        <div class="form-group">
+                          <label class="label" for="subject">Type of Service:</label>
+                          <select type="text" class="form-control" name="servicetype" required="true" >
+                            <option value="">Choose Service Type</option>
+                            <?php 
+
+                            $sql2 = "SELECT * from   tblservice ";
+                            $query2 = $dbh -> prepare($sql2);
+                            $query2->execute();
+                            $result2=$query2->fetchAll(PDO::FETCH_OBJ);
+
+                            foreach($result2 as $row)
+                            {          
+                              ?>  
+                              <option value="<?php echo htmlentities($row->ServiceName);?>"><?php echo htmlentities($row->ServiceName);?></option>
+                            <?php } ?>
+                          </select>
+                        </div>
+
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
@@ -262,9 +280,7 @@ if(isset($_POST['submit']))
                  <th class=" Text-center" style="width: 15%;">Action</th>
                </tr>
              </thead>
-             <!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+              
 <tbody>
                <?php
                $sql="SELECT * from tblbooking where Status is null";
@@ -281,7 +297,7 @@ if(isset($_POST['submit']))
                       <td class="text-center"><?php echo htmlentities($cnt);?></td>
                       <td class="font-w600"><?php  echo htmlentities($row->BookingID);?></td>
                       <td class="font-w600"><?php  echo htmlentities($row->Name);?></td>
-                      <td class="font-w600">0<?php  echo htmlentities($row->MobileNumber);?></td>
+                      <td class="font-w600">0<?php echo htmlentities($row->MobileNumber);?></td>
                       <td class="font-w600"><?php  echo htmlentities($row->Email);?></td>
                       <td class="font-w600">
                         <span class="badge badge-info"><?php  echo htmlentities($row->BookingDate);?></span>
@@ -324,9 +340,7 @@ if(isset($_POST['submit']))
 </div>
 
 <?php @include("includes/foot.php");?>
-<!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -361,7 +375,5 @@ if(isset($_POST['submit']))
   });
 </script>
 </body>
-<!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
+ 
 </html>

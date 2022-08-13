@@ -13,7 +13,7 @@
   
   <link rel="shortcut icon" href="assets/images/favicon.jpg" />
   <link rel="stylesheet" href="assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <link href="assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet"> -->
   <style >
     th { 
       white-space: normal !important;
